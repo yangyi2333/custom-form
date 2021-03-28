@@ -1,0 +1,33 @@
+
+html,body, dl, dt, dd, a, p, h1, h2,ul,li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+}
+ul:focus,li:focus{
+    outline: none;
+}
+
+$border-gray: 1px solid #eee;
+
+$primary-color: #15b9ef;
+$warning-color: #e6a23c;
+$error-color: #fc494d;
+$success-color: #19df64;
+
+$cf-item-height: 80px;
+
+@mixin display-flex($rc: row, $wrap: nowrap, $j: center, $a: center) {
+  display: flex;
+  flex-flow: $rc $wrap;
+  justify-content: $j;
+  align-items: $a;
+}
+
+
+

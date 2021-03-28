@@ -1,0 +1,43 @@
+.cf-layout--list{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    &--groups {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+
+        &--name {
+            text-align: left; 
+            padding: 8px 0;
+        }
+
+        &--content {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        &--item {
+            border: $border-gray;
+            border-radius: 4px;
+            width: 106px;
+            float: left;
+            font-size: 12px;
+            margin: 2px;
+            box-sizing: border-box;
+            padding: 1px 0;
+            line-height: 26px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            background: rgba(21, 185, 239, .05);
+            cursor: move;
+            &:hover {
+                border: 1px dashed $primary-color;
+                color: $primary-color;
+            }
+        }
+    }
+}
